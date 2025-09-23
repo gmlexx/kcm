@@ -57,7 +57,7 @@ jobs:
       - name: "[Latest release] Create KIND kcm cluster"
         run: |
           make -C kcm-repo dev-apply
-      - name: "Checkout"
+      - name: "Checkout PR"
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
